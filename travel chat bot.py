@@ -13,7 +13,7 @@ def recomend():
     preference=input(Fore.YELLOW+"you:")
     if preference in destination:
         suggestion=random.choice(destination[preference])
-        print(f"{Fore.RED}Travel bot: how about{suggestion}?")
+        print(f"{Fore.RED}Travel bot: how about {suggestion}?")
         print(f"{Fore.RED}Did you like the destination?(yes/no)")
         answer=input(Fore.YELLOW+"you:")
         if answer=="yes":
@@ -46,3 +46,7 @@ def chat():
             joke()
         elif "exit" in userinput:
             print(f"{Fore.CYAN}Travel bot:")
+        else:
+            print("could you rephrase it?")
+if __name__=="__main__":
+    chat()
